@@ -1,2 +1,2 @@
-# master
+# FinanEasy
 Base Principal
