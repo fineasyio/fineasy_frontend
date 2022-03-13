@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:finan_easy/view/v_login.dart';
 
 void main() {
   runApp(const Fineasy());
 }
 
+final login = Login();
+
 class Fineasy extends StatelessWidget {
   const Fineasy({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: '',
+      home: login.paginaInicial(context),
     );
   }
 }
