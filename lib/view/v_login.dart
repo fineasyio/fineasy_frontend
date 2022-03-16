@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
 class LoginPagina extends StatelessWidget {
@@ -20,7 +21,7 @@ class LoginPagina extends StatelessWidget {
               height: 128,
               child: Image.asset("assets/logo.png"),
             ),
-            SizedBox(
+            const SizedBox(
               width: 10,
               height: 10,
             ),
@@ -29,13 +30,13 @@ class LoginPagina extends StatelessWidget {
               height: 50,
               child: Image.asset("assets/logoName.png"),
             ),
-            SizedBox(
+            const SizedBox(
               width: 40,
               height: 40,
             ),
             TextFormField(
               keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: "E-mail",
                 labelStyle: TextStyle(
                   color: Color.fromRGBO(10, 139, 108, 1),
@@ -43,19 +44,19 @@ class LoginPagina extends StatelessWidget {
                   fontSize: 15,
                 ),
               ),
-              style: TextStyle(
+              style: const TextStyle(
                 color: Color.fromRGBO(10, 139, 108, 1),
                 fontSize: 20,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 20,
               height: 20,
             ),
             TextFormField(
               keyboardType: TextInputType.number,
               obscureText: true,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: "Senha",
                 labelStyle: TextStyle(
                   color: Color.fromRGBO(10, 139, 108, 1),
@@ -63,7 +64,7 @@ class LoginPagina extends StatelessWidget {
                   fontSize: 15,
                 ),
               ),
-              style: TextStyle(
+              style: const TextStyle(
                 color: Color.fromRGBO(10, 139, 108, 1),
                 fontSize: 20,
               ),
@@ -73,27 +74,27 @@ class LoginPagina extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: FlatButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   "Esqueci Senha",
                 ),
                 textColor: Color.fromRGBO(10, 139, 108, 1),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 40,
               height: 40,
             ),
             Container(
               height: 55,
               alignment: Alignment.centerLeft,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color.fromRGBO(28, 172, 182, 1),
                 borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
               child: SizedBox.expand(
                 child: FlatButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "Entrar",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -104,21 +105,21 @@ class LoginPagina extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 20,
               height: 20,
             ),
             Container(
               height: 55,
               alignment: Alignment.center,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color.fromRGBO(10, 139, 108, 1),
                 borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
               child: SizedBox.expand(
                 child: FlatButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "Cadastre-se",
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
