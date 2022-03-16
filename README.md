@@ -1,2 +1,2 @@
-# FinanEasy
+# FinEasy
 Base Principal
