@@ -5,7 +5,7 @@ void main() {
   runApp(const Fineasy());
 }
 
-final login = Login();
+final login = LoginPagina();
 
 class Fineasy extends StatelessWidget {
   const Fineasy({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class Fineasy extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: login.paginaInicial(context),
+      home: login.build(context),
     );
   }
 }
