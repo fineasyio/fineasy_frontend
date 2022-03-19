@@ -1,4 +1,5 @@
 // ignore: file_names
+import 'package:finan_easy/main.dart';
 import 'package:flutter/material.dart';
 
 class LoginPagina extends StatelessWidget {
@@ -73,7 +74,9 @@ class LoginPagina extends StatelessWidget {
               height: 40,
               alignment: Alignment.centerRight,
               child: FlatButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/EsqueciSenha');
+                },
                 child: const Text(
                   "Esqueci Senha",
                 ),
@@ -93,7 +96,9 @@ class LoginPagina extends StatelessWidget {
               ),
               child: SizedBox.expand(
                 child: FlatButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/Home');
+                  },
                   child: const Text(
                     "Entrar",
                     style: TextStyle(
@@ -118,7 +123,9 @@ class LoginPagina extends StatelessWidget {
               ),
               child: SizedBox.expand(
                 child: FlatButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/Cadastro');
+                  },
                   child: const Text(
                     "Cadastre-se",
                     style: TextStyle(
