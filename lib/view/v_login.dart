@@ -1,5 +1,6 @@
 // ignore: file_names
-import 'package:finan_easy/main.dart';
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 
 class LoginPagina extends StatelessWidget {
