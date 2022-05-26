@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "639028240405",
+    "project_id": "fineasy-ea96c",
+    "storage_bucket": "fineasy-ea96c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639028240405:android:8bb5b6bccff9d5cc7f6e1c",
+        "android_client_info": {
+          "package_name": "com.finEasy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639028240405-anfs04iovnmrqe1f5rqel0r49ul8o171.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvOYTgIaj5pxOGvH5kQ4RhexJXZJtN_Dw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639028240405-anfs04iovnmrqe1f5rqel0r49ul8o171.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
