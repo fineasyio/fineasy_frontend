@@ -2,12 +2,15 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginPagina extends StatelessWidget {
   const LoginPagina({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
+    GoogleSignInAccount? user = _googleSignIn.currentUser;
     return Scaffold(
       body: Container(
         padding: const EdgeInsets.only(
@@ -85,8 +88,8 @@ class LoginPagina extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              width: 40,
-              height: 40,
+              width: 15,
+              height: 15,
             ),
             Container(
               height: 55,
@@ -112,8 +115,8 @@ class LoginPagina extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              width: 20,
-              height: 20,
+              width: 15,
+              height: 15,
             ),
             Container(
               height: 55,
@@ -132,6 +135,33 @@ class LoginPagina extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
+                        fontSize: 23),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(
+              width: 15,
+              height: 15,
+            ),
+            Container(
+              height: 55,
+              alignment: Alignment.center,
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 175, 228, 238),
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+              ),
+              child: SizedBox.expand(
+                child: FlatButton(
+                  onPressed: () async {
+                    await _googleSignIn.signIn();
+                    Navigator.of(context).pushNamed('/Home');
+                  },
+                  child: const Text(
+                    "Login Google",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Color.fromARGB(255, 35, 44, 49),
                         fontSize: 23),
                   ),
                 ),

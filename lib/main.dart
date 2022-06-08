@@ -5,7 +5,21 @@ import 'package:flutter/material.dart';
 import 'package:finan_easy/view/v_login.dart';
 
 void main() {
-  runApp(const Fineasy());
+  runApp(GoogleSignInApp());
+}
+
+class GoogleSignInApp extends StatefulWidget {
+  const GoogleSignInApp({Key? key}) : super(key: key);
+
+  @override
+  State<GoogleSignInApp> createState() => _GoogleSignInAppState();
+}
+
+class _GoogleSignInAppState extends State<GoogleSignInApp> {
+  @override
+  Widget build(BuildContext context) {
+    return const Fineasy();
+  }
 }
 
 final v_login = LoginPagina();
