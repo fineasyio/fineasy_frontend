@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "639028240405",
+    "project_id": "fineasy-ea96c",
+    "storage_bucket": "fineasy-ea96c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639028240405:android:f03949cfe7b1a2357f6e1c",
+        "android_client_info": {
+          "package_name": "com.example.finan_easy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639028240405-6smjtv1oi4iup2q9f3jbt4naa7rr6b3f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finan_easy",
+            "certificate_hash": "8a8bbb990e104c36a803955ec46ea72507bf01cd"
+          }
+        },
+        {
+          "client_id": "639028240405-anfs04iovnmrqe1f5rqel0r49ul8o171.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvOYTgIaj5pxOGvH5kQ4RhexJXZJtN_Dw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639028240405-anfs04iovnmrqe1f5rqel0r49ul8o171.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
